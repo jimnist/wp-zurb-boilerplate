@@ -6662,7 +6662,7 @@ a.th {
 }
 
 /* ===========================================================
-   BRANDING COLORS
+  SOME COLORS
 =========================================================== */
 /* ===========================================================
    BLOG COLORS
@@ -6922,4 +6922,33 @@ a.th {
   padding: 0 4px 5px;
   font-size: 11px;
   line-height: 17px;
+}
+
+/* line 2, ../scss/_styles.scss */
+header.row, footer.row {
+  border: solid 1px #d9d9d9;
+  background-color: rgba(255, 229, 204, 0.44);
+  color: #666;
+  padding: 11px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  text-align: center;
+}
+
+/* line 12, ../scss/_styles.scss */
+.welcome {
+  text-align: center;
+}
+/* line 14, ../scss/_styles.scss */
+.welcome h1 {
+  font-size: 3em;
+}
+
+/* line 21, ../scss/_styles.scss */
+.posts ul {
+  list-style: none;
+}
+/* line 24, ../scss/_styles.scss */
+.posts li {
+  margin-bottom: 6px;
 }

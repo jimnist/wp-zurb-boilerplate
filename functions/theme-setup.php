@@ -48,7 +48,7 @@ add_filter('login_errors', 'login_obscure');
 function ip_scripts_styles()
 {
     wp_enqueue_script('ip_script', get_template_directory_uri() . '/js/theme.js',array('jquery'), null, true);
-    wp_enqueue_style('ip_style', get_template_directory_uri() . '/css/global.css', false, null);
+    wp_enqueue_style('ip_style', get_template_directory_uri() . '/css/app.css', false, null);
     if (is_singular('post')){
         wp_enqueue_script('comment-reply');
     }

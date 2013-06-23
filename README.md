@@ -15,3 +15,17 @@ besides being on a mac, my development process would be similar, but a little di
 * generally work things out in the index.html
 * convert to the index.php and other files
 * set up a production server and deploy the site to it from github
+
+
+install wordpress locally, then link your local theme working directory under the wordpress install's theme directory
+
+```
+$ ln -s ~/wrk/personal/wp-zurb-boilerplate ~/wrk/personal/wordpress/wp-content/themes/wp-zurb-boilerplate
+```
+
+
+TODO:
+
+* style index.php
+* add screenshot.png
+* style 404 with zurb layout css
