@@ -1,6 +1,8 @@
 wp-zurb-boilerplate
 ===================
 
+NOTE - this is in-progress and might not work just right yet
+
 worpress site boilerplate with [zurb foundation 4](http://foundation.zurb.com/) sprinkled in
 
 this is based on [this](https://github.com/inverse-paradox/boilerplate) repo, which is referenced in [John’s Windows WordPress Theme Development Workflow (now with SASS!)](http://www.inverseparadox.com/2013/05/johns-windows-wordpress-theme-development-workflow-now-with-sass/).
