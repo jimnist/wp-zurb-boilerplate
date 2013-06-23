@@ -12,7 +12,7 @@ besides being on a mac, my development process would be similar, but a little di
 * start with this repo and make a new github repo for the project
 * set up a local dev environment using:
   * [livereload](http://livereload.com/)
-  * [compass](http://compass-style.org/) running in a terminal window to compile the scss
+  * [compass](http://compass-style.org/) running in a terminal window to compile the scss. this implies Ruby so i have included a Gemfile so you can use [bundler](http://gembundler.com/). i also use [rvm](http://rvm.io/) and might even be using a [gemset](http://rvm.io/gemsets), but that's just me.
   * wordpress running locally via Apache
 * generally work things out in the index.html
 * convert to the index.php and other files
