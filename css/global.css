@@ -1,663 +1,101 @@
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
-/* ==========================================================================
-   Additions
-   ========================================================================== */
-* {
-  margin: 0;
-  padding: 0; }
-
-a, a img, img {
-  text-decoration: none;
-  outline: 0; }
-
-a img {
-  border: none;
-  outline: none; }
-
-ul {
-  list-style: none; }
-
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
 /*
- * Corrects `block` display not defined in IE 8/9.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block; }
+Syntax error: Not a valid color stop: Sass::Script::String: #white 0%
+        on line 45 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_mixins.scss, in `linear-gradient'
+        from line 39 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_var.scss
+        from line 4 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/global.scss
 
-/*
- * Corrects `inline-block` display not defined in IE 8/9.
- */
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-/*
- * Prevents modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/*
- * Addresses styling for `hidden` attribute not present in IE 8/9.
- */
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/*
- * 1. Sets default font family to sans-serif.
- * 2. Prevents iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */ }
-
-/*
- * Removes default margin.
- */
-body {
-  margin: 0; }
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/*
- * Addresses `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: 0; }
-
-/*
- * Improves readability when focused and also mouse hovered in all browsers.
- */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/*
- * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
- * Safari 5, and Chrome.
- */
-h1 {
-  font-size: 2em; }
-
-/*
- * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
- */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/*
- * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-b,
-strong {
-  font-weight: bold; }
-
-/*
- * Addresses styling not present in Safari 5 and Chrome.
- */
-dfn {
-  font-style: italic; }
-
-/*
- * Addresses styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/*
- * Corrects font family set oddly in Safari 5 and Chrome.
- */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-/*
- * Improves readability of pre-formatted text in all browsers.
- */
-pre {
+Backtrace:
+/Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_mixins.scss:45:in `linear-gradient'
+/Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_var.scss:39
+/Users/jim/wrk/personal/wp-zurb-boilerplate/scss/global.scss:4
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/sass_extensions/functions/gradient_support.rb:256:in `block in color_stops'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/sass_extensions/functions/gradient_support.rb:246:in `map'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/sass_extensions/functions/gradient_support.rb:246:in `color_stops'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/sass_extensions/functions/gradient_support.rb:303:in `linear_gradient'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/script/funcall.rb:112:in `_perform'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/script/node.rb:40:in `perform'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:268:in `block (3 levels) in visit_mixin'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:268:in `map'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:268:in `block (2 levels) in visit_mixin'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:268:in `block in visit_mixin'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:70:in `perform_arguments'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `map'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/bin/compass:44:in `call'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/bin/compass:19:in `load'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/bin/compass:19:in `<main>'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/jim/.rvm/gems/ruby-1.9.3-p392@wp-boiler/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
   white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-/*
- * Sets consistent quote types.
- */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-/*
- * Addresses inconsistent and variable font size in all browsers.
- */
-small {
-  font-size: 80%; }
-
-/*
- * Prevents `sub` and `sup` affecting `line-height` in all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/*
- * Removes border when inside `a` element in IE 8/9.
- */
-img {
-  border: 0; }
-
-/*
- * Corrects overflow displayed oddly in IE 9.
- */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/*
- * Addresses margin not present in IE 8/9 and Safari 5.
- */
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/*
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/*
- * 1. Corrects color not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/*
- * 1. Corrects font family not being inherited in all browsers.
- * 2. Corrects font size not being inherited in all browsers.
- * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
- */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
-
-/*
- * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-button,
-input {
-  line-height: normal; }
-
-/*
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Corrects inability to style clickable `input` types in iOS.
- * 3. Improves usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
-/*
- * Re-set default cursor for disabled elements.
- */
-button[disabled],
-input[disabled] {
-  cursor: default; }
-
-/*
- * 1. Addresses box sizing set to `content-box` in IE 8/9.
- * 2. Removes excess padding in IE 8/9.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/*
- * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box; }
-
-/*
- * Removes inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/*
- * Removes inner padding and border in Firefox 4+.
- */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/*
- * 1. Removes default vertical scrollbar in IE 8/9.
- * 2. Improves readability and alignment in all browsers.
- */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/*
- * Remove most spacing between table cells.
- */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* ===========================================================
-   MIXINS
-=========================================================== */
-/* ===========================================================
-   FONTS
-=========================================================== */
-/* ===========================================================
-   BRANDING COLORS
-=========================================================== */
-/* ===========================================================
-   BLOG COLORS
-=========================================================== */
-/* ===========================================================
-   EXTENDS
-=========================================================== */
-input, select, textarea {
-  padding: 3px;
-  font: Arial, Helvetica, sans-serif 12px;
-  color: black;
-  background: #fff;
-  border: 1px #ccc solid; }
-
-input[type=submit] {
-  padding: 3px 6px;
-  font: Arial, Helvetica, sans-serif 12px;
-  color: black;
-  border: 1px #ccc solid;
-  border-radius: 5px;
-  background: "#ffffff";
-  background-image: url(data:image/svg+xml,%3c%3fxml%20version%3d%221%2e0%22%3f%3e%3csvg%20xmlns%3d%22http%3a%2f%2fwww%2ew3%2eorg%2f2000%2fsvg%22%20width%3d%22100%25%22%20height%3d%22100%25%22%3e%3cdefs%3e%3clinearGradient%20id%3d%22G%22%20x2%3d%220%25%22%20y2%3d%22100%25%22%3e%3cstop%20style%3d%22stop%2dcolor%3a%23ffffff%22%20offset%3d%220%25%22%2f%3e%3cstop%20style%3d%22stop%2dcolor%3a%23eeeeee%22%20offset%3d%22100%25%22%2f%3e%3c%2flinearGradient%3e%3c%2fdefs%3e%3crect%20width%3d%22100%25%22%20height%3d%22100%25%22%20fill%3d%22url%28%23G%29%22%2f%3e%3c%2fsvg%3e);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
-  background-image: -o-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
-  background-image: -ms-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
-  cursor: pointer; }
-  .lt-ie9 input[type=submit] {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0); }
-
-/* ===========================================================
-   DEFAULTS
-=========================================================== */
-body {
-  font: 12px Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  color: black;
-  background-color: #fff; }
-
-a {
-  color: #c40c1d; }
-  a:hover, a:active {
-    color: black; }
-
-br.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden; }
-
-/* ===========================================================
-   PAGE WRAPPER
-=========================================================== */
-.container {
-  margin: 0 auto; }
-  .container:after {
-    content: ".";
-    display: block;
-    clear: both;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden; }
-  .ie7 .container {
-    zoom: 1; }
-
-/* ===========================================================
-   HEADER
-=========================================================== */
-.header:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .header {
-  zoom: 1; }
-
-/* ===========================================================
-   MAIN NAV
-=========================================================== */
-.nav:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .nav {
-  zoom: 1; }
-
-/* ===========================================================
-   PAGE BODY
-=========================================================== */
-.page-body:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .page-body {
-  zoom: 1; }
-
-/* ===========================================================
-   MAIN COLUMN
-=========================================================== */
-.main:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .main {
-  zoom: 1; }
-
-.aligncenter {
-  text-align: center; }
-
-.alignleft {
-  float: left; }
-
-.alignright {
-  float: right; }
-
-img.alignleft, .wp-caption.alignleft {
-  margin: 0 12px 4px 0; }
-
-img.alignright, .wp-caption.alignright {
-  margin: 0 0 4px 12px; }
-
-img.aligncenter, .wp-caption.aligncenter {
-  display: block;
-  margin: 0 auto; }
-
-.wp-caption {
-  margin: 10px 0;
-  padding: 4px 0 0;
-  text-align: center;
-  background-color: #f3f3f3;
-  border: 1px solid #ddd;
-  border-radius: 3px; }
-  .wp-caption .wp-caption-text {
-    padding: 0 4px 5px;
-    font-size: 11px;
-    line-height: 17px; }
-
-/* ===========================================================
-   SIDE COLUMN
-=========================================================== */
-.side:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .side {
-  zoom: 1; }
-
-/* ===========================================================
-   SPECIFIC PAGES
-=========================================================== */
-/* ===========================================================
-   DEFAULT BLOG LAYOUT
-=========================================================== */
-.post {
-  margin: 15px 0 30px 0; }
-  .post .topmeta {
-    margin: 0 0 12px; }
-    .post .topmeta:after {
-      content: ".";
-      display: block;
-      clear: both;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden; }
-    .ie7 .post .topmeta {
-      zoom: 1; }
-    .post .topmeta .date {
-      float: left;
-      min-height: 16px;
-      line-height: 16px;
-      font-style: italic; }
-    .post .topmeta .edit {
-      float: right;
-      min-height: 16px;
-      line-height: 16px; }
-      .post .topmeta .edit a {
-        background: url(../images/pencil.png) no-repeat top left;
-        padding: 1px 0 1px 20px; }
-    .post .topmeta .category {
-      float: right;
-      padding: 0 0 0 20px;
-      min-height: 16px;
-      line-height: 16px;
-      background: url(../images/folder.png) no-repeat top left; }
-  .post .bottommeta:after {
-    content: ".";
-    display: block;
-    clear: both;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden; }
-  .ie7 .post .bottommeta {
-    zoom: 1; }
-  .post .bottommeta .category {
-    float: left;
-    padding: 0 0 0 20px;
-    min-height: 16px;
-    line-height: 16px;
-    background: url(../images/folder.png) no-repeat top left; }
-  .post .bottommeta .comments {
-    float: right;
-    padding: 0 0 0 20px;
-    min-height: 16px;
-    line-height: 16px;
-    background: url(../images/comments.png) no-repeat top left; }
-  .post .bottommeta .edit {
-    float: right; }
-    .post .bottommeta .edit a {
-      background: url(../images/pencil.png) no-repeat top left;
-      padding: 1px 0 1px 20px; }
-  .post .postcontent {
-    margin: 12px 0 0; }
-    .post .postcontent:after {
-      content: ".";
-      display: block;
-      clear: both;
-      height: 0;
-      overflow: hidden;
-      visibility: hidden; }
-    .ie7 .post .postcontent {
-      zoom: 1; }
-  .post .tags {
-    display: block;
-    min-height: 16px;
-    padding: 0 0 7px 20px;
-    background: url(../images/tag.png) no-repeat 0 0; }
-
-.archive .post .bottommeta {
-  padding: 4px 6px;
-  background-color: #f2f2f2;
-  border-bottom: 1px solid #e5e5e5; }
-.archive .post h2 {
-  margin: 0 0 4px; }
-  .archive .post h2 a {
-    text-decoration: none; }
-
-.post-comments h2 {
-  margin: 0; }
-.post-comments .comment-list {
-  margin: 15px 0 0 0;
-  padding: 0;
-  list-style: none; }
-  .post-comments .comment-list ul {
-    margin: 0;
-    padding: 0 10px 0 10px;
-    list-style: none; }
-  .post-comments .comment-list li {
-    margin: 10px 0;
-    background-color: #fafafa;
-    border: 1px solid #e0e0e0; }
-    .post-comments .comment-list li.thread-alt, .post-comments .comment-list li.alt {
-      background-color: #f2f2f2;
-      border-color: #d9d9d9; }
-  .post-comments .comment-list ul li:first-child {
-    margin-top: 0; }
-  .post-comments .comment-list .comment-author {
-    margin: 7px 0 0 7px; }
-    .post-comments .comment-list .comment-author .avatar {
-      float: left;
-      margin: 0 8px 0 0; }
-    .post-comments .comment-list .comment-author cite {
-      float: left;
-      height: 18px;
-      font-weight: bold;
-      font-style: normal; }
-    .post-comments .comment-list .comment-author .says {
-      display: none; }
-  .post-comments .comment-list .comment-meta {
-    padding: 18px 0 3px;
-    margin: 0 7px 2px;
-    border-bottom: 1px solid #e5e5e5; }
-  .post-comments .comment-list p {
-    margin: 0;
-    padding: 6px 10px; }
-  .post-comments .comment-list .reply {
-    padding: 0 0 6px 10px; }
-.post-comments .comments-respond {
-  margin: 20px 0 0; }
-  .post-comments .comments-respond h3 {
-    margin: 0 0 10px; }
-  .post-comments .comments-respond p.form-field-wrapper {
-    margin: 10px 0; }
-  .post-comments .comments-respond label {
-    margin: 0 0 3px;
-    display: block; }
-    .post-comments .comments-respond label.required {
-      font-weight: bold; }
-    .post-comments .comments-respond label .note {
-      font-weight: normal;
-      font-style: italic; }
-  .post-comments .comments-respond input.textbox {
-    width: 250px; }
-  .post-comments .comments-respond textarea {
-    width: 500px;
-    height: 200px; }
-
-/* ===========================================================
-   FOOTER
-=========================================================== */
-.footer:after {
-  content: ".";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-.ie7 .footer {
-  zoom: 1; }
+  font-family: monospace;
+  content: "Syntax error: Not a valid color stop: Sass::Script::String: #white 0%\A         on line 45 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_mixins.scss, in `linear-gradient'\A         from line 39 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/_var.scss\A         from line 4 of /Users/jim/wrk/personal/wp-zurb-boilerplate/scss/global.scss"; }

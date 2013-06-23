@@ -14,3 +14,4 @@ sitemap.xml
 sitemap.xml.gz
 .ruby-gemset
 .ruby-version
+.sass-cache/
