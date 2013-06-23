@@ -24,8 +24,28 @@ $ ln -s ~/wrk/personal/wp-zurb-boilerplate ~/wrk/personal/wordpress/wp-content/t
 ```
 
 
+apache virtual host config:
+
+```
+<VirtualHost *:80>
+    ServerAdmin bobo@example.com
+    DocumentRoot "/Users/bobo/wrk/wordpress"
+    ServerName staengl.dev
+    ServerAlias *.staengl.dev
+    ErrorLog "/private/var/log/apache2/bobo-error_log"
+    CustomLog "/private/var/log/apache2/bobo-access_log" common
+    <Directory "/Users/bobo/wrk/wordpress">
+       AllowOverride All
+       Options FollowSymlinks Indexes MultiViews
+       Order allow,deny
+       Allow from 127.0.0.1
+    </Directory>
+</VirtualHost>
+```
+
+
 TODO:
 
 * style index.php
 * add screenshot.png
-* style 404 with zurb layout css
+* style 404 with zurb layout css? or is that the same as notfound.php?

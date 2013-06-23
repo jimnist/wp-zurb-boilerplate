@@ -44,19 +44,57 @@ function login_obscure()
 add_filter('login_errors', 'login_obscure');
 
 
-/* == Queue up all css & js files ========== */
-function ip_scripts_styles()
+/* == Queue up all css files ========== */
+function boiler_styles()
 {
-    wp_enqueue_script('ip_script', get_template_directory_uri() . '/js/theme.js',array('jquery'), null, true);
-    wp_enqueue_style('ip_style', get_template_directory_uri() . '/css/app.css', false, null);
+    wp_enqueue_style('boiler-style', get_template_directory_uri() . '/css/app.css', false, null);
+}
+add_action('wp_enqueue_scripts', 'boiler_styles');
+
+function foundation_zepto_or_jquery()
+{
+    $output = '';
+    $output .= "<script>\n";
+    $output .= "document.write('<script src=' +\n";
+    $output .= "('__proto__' in {} ? '" . get_template_directory_uri() . "/js/vendor/zepto' : '" . get_template_directory_uri() . "/js/vendor/jquery') +\n";
+    $output .= "'.js><\/script>')\n";
+    $output .= "</script>\n";
+    echo $output;
+}
+add_action('wp_footer', 'foundation_zepto_or_jquery');
+
+/* == Deal with the js. we want most of it at the bottom ========== */
+function boiler_js()
+{
+    // modernizr goes at the top, everything else at the bottom
+    wp_enqueue_script('boiler-modernizr-js', get_template_directory_uri() . '/js/vendor/custom.modernizr.js', null, null, false);
+
+    // HINT: comment outt he ones you don't use
+    wp_enqueue_script('boiler-theme-js', get_template_directory_uri() . '/js/foundation/foundation.js', null, null, true);
+    wp_enqueue_script('boiler-alerts-js', get_template_directory_uri() . '/js/foundation/foundation.alerts.js', null, null, true);
+    wp_enqueue_script('boiler-clearing-js', get_template_directory_uri() . '/js/foundation/foundation.clearing.js', null, null, true);
+    wp_enqueue_script('boiler-cookie-js', get_template_directory_uri() . '/js/foundation/foundation.cookie.js', null, null, true);
+    wp_enqueue_script('boiler-dropdown-js', get_template_directory_uri() . '/js/foundation/foundation.dropdown.js', null, null, true);
+    wp_enqueue_script('boiler-forms-js', get_template_directory_uri() . '/js/foundation/foundation.forms.js', null, null, true);
+    wp_enqueue_script('boiler-interchange-js', get_template_directory_uri() . '/js/foundation/foundation.interchange.js', null, null, true);
+    wp_enqueue_script('boiler-joyride-js', get_template_directory_uri() . '/js/foundation/foundation.joyride.js', null, null, true);
+    wp_enqueue_script('boiler-magellan-js', get_template_directory_uri() . '/js/foundation/foundation.magellan.js', null, null, true);
+    wp_enqueue_script('boiler-orbit-js', get_template_directory_uri() . '/js/foundation/foundation.orbit.js', null, null, true);
+    wp_enqueue_script('boiler-placeholder-js', get_template_directory_uri() . '/js/foundation/foundation.placeholder.js', null, null, true);
+    wp_enqueue_script('boiler-reveal-js', get_template_directory_uri() . '/js/foundation/foundation.reveal.js', null, null, true);
+    wp_enqueue_script('boiler-section-js', get_template_directory_uri() . '/js/foundation/foundation.section.js', null, null, true);
+    wp_enqueue_script('boiler-tooltips-js', get_template_directory_uri() . '/js/foundation/foundation.tooltips.js', null, null, true);
+    wp_enqueue_script('boiler-topbar-js', get_template_directory_uri() . '/js/foundation/foundation.topbar.js', null, null, true);
+    wp_enqueue_script('boiler-theme-js', get_template_directory_uri() . '/js/theme.js', null, null, true);
     if (is_singular('post')){
         wp_enqueue_script('comment-reply');
     }
 }
-add_action('wp_enqueue_scripts', 'ip_scripts_styles');
+add_action('wp_enqueue_scripts', 'boiler_js');
+
 
 /* == adds iOS icons and favicon ========== */
-function ip_header_icons()
+function boiler_header_icons()
 {
     $output = '';
     $output .= '<link rel="apple-touch-icon" sizes="144x144" href="' . get_template_directory_uri() . '/images/apple-touch-icon-144x144.png" />' . "\n";
@@ -66,11 +104,17 @@ function ip_header_icons()
     $output .= '<link rel="shortcut icon" href="' . get_template_directory_uri() . '/favicon.ico" />' . "\n";
     echo $output;
 }
-add_action('wp_head', 'ip_header_icons');
+add_action('wp_head', 'boiler_header_icons');
 
 
 /* == add additional options pages ========== */
 // if (function_exists('register_options_page')) {
 //     register_options_page('Options Page Name');
 // }
+
+function demo_image($image_root)
+{
+    echo get_template_directory_uri() . '/img/' . $image_root;
+}
+
 ?>
