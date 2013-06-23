@@ -23,7 +23,8 @@ install wordpress locally, then link your local theme working directory under th
 $ ln -s ~/wrk/personal/wp-zurb-boilerplate ~/wrk/personal/wordpress/wp-content/themes/wp-zurb-boilerplate
 ```
 
-
+notes below will soon become a blog post
+=====
 apache virtual host config:
 
 ```
@@ -43,9 +44,10 @@ apache virtual host config:
 </VirtualHost>
 ```
 
+deploying to dreamhost
+=====
+
 
 TODO:
-
-* style index.php
-* add screenshot.png
+=====
 * style 404 with zurb layout css? or is that the same as notfound.php?
