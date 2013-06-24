@@ -23,7 +23,7 @@ install wordpress locally, then link your local theme working directory under th
 $ ln -s ~/wrk/personal/wp-zurb-boilerplate ~/wrk/personal/wordpress/wp-content/themes/wp-zurb-boilerplate
 ```
 
-notes below will soon become a blog post
+notes
 =====
 apache virtual host config:
 
@@ -46,8 +46,14 @@ apache virtual host config:
 
 deploying to dreamhost
 =====
+* create a custom subdomain
+* maybe wait for some DNS propagation
+* use one-click install to install wordpress to the new custom subdomain
+* clone your custom theme's repositor in
+* configure your site to use the custom theme
 
 
 TODO:
 =====
 * style 404 with zurb layout css? or is that the same as notfound.php?
+
