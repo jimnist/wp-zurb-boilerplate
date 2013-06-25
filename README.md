@@ -49,7 +49,8 @@ deploying to dreamhost
 * create a custom subdomain
 * maybe wait for some DNS propagation
 * use one-click install to install wordpress to the new custom subdomain
-* clone your custom theme's repositor in
+* set up a git user on the dreamhost account
+* clone your custom theme's repositor in wp-content/themes
 * configure your site to use the custom theme
 
 

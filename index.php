@@ -1,8 +1,4 @@
-<?php
-/**
- * @package WordPress
- */
-get_header(); ?>
+<?php get_header(); ?>
 
  <div class="row welcome">
     <div class="large-12 columns">
