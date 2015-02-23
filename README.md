@@ -31,8 +31,8 @@ apache virtual host config:
 <VirtualHost *:80>
     ServerAdmin bobo@example.com
     DocumentRoot "/Users/bobo/wrk/wordpress"
-    ServerName staengl.dev
-    ServerAlias *.staengl.dev
+    ServerName bobo.dev
+    ServerAlias *.bobo.dev
     ErrorLog "/private/var/log/apache2/bobo-error_log"
     CustomLog "/private/var/log/apache2/bobo-access_log" common
     <Directory "/Users/bobo/wrk/wordpress">
